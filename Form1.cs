@@ -105,5 +105,10 @@ namespace Indent_alignment_for_tables
                 textControl1.Selection.Length = oldSelLenght;
             }
         }
-    }
+
+		private void deleteTableToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+            textControl1.Tables.Remove();
+		}
+	}
 }
